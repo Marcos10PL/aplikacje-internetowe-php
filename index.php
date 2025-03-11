@@ -2,7 +2,7 @@
 
 $projects = scandir(__DIR__);
 
-echo "<h3>Projects</h3>";
+echo "<h3>Moje projekty:</h3>";
 
 echo "<ul>";
 foreach ($projects as $project) {
