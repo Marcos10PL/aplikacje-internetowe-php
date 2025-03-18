@@ -2,7 +2,7 @@
 
 {block name=content}
 
-<form method="post" action="{app_url}/app/calc-credit.php#main">
+<form method="post" action="{$app_url}/app/calc-credit.php#main">
   <div class="row gtr-50 aln-center">
     <div class="col-7 col-12-small">
       <input type="number" name="sum" step="any" value="{$calcForm['sum']}" placeholder="Kwota" />
@@ -21,13 +21,13 @@
 </form>
 
 <div style="text-align: center;">
-  {if (!empty($message)) }
+  {if !empty($message)}
     <div style="color: firebrick; font-size: 1.4rem; text-transform: uppercase;">
       {$message}
     </div>
   {/if}
 
-  {if (!empty($result))}
+  {if !empty($result)}
     <div style="color: forestgreen; font-size: 1.4rem; text-transform: uppercase;">
       Miesięczna rata: {$result}
     </div>

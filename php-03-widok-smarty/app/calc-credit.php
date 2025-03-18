@@ -1,6 +1,8 @@
 <?php
 require_once dirname(__FILE__) . '/../config.php';
 
+require_once _ROOT_PATH . '/lib/smarty/libs/Smarty.class.php';
+
 function getParams(&$calcForm, &$requiredFields)
 {
   foreach ($requiredFields as $field) {
@@ -37,9 +39,8 @@ function process(&$calcForm)
   return round(($calcForm['sum'] + ($calcForm['sum'] * $calcForm['interest-rate'] / 100)) / ($calcForm['years'] * 12), 2);
 }
 
-
-$calcForm = array();
 $requiredFields = ['sum', 'years', 'interest-rate'];
+$calcForm = array_fill_keys($requiredFields, ''); 
 
 $message = null;
 $result = null;
@@ -49,10 +50,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if (validate($calcForm, $requiredFields, $message)) {
     $result = process($calcForm);
   }
-} 
+}
 
-$page_title = 'Kalkulator kredytowy';
-$page_description = 'Tu możesz obliczyć swoją miesięczną ratę kredytu';
-$page_header = 'Kalkulator kredytowy';
+$smarty = new Smarty\Smarty();
 
-include _ROOT_PATH . '/app/calc-credit_view.php';
+$smarty->assign('root_path', _ROOT_PATH);
+$smarty->assign('app_url', _APP_URL);
+$smarty->assign('page_title', 'Kalkulator kredytowy');
+$smarty->assign('page_description', 'Tu możesz obliczyć swoją miesięczną ratę kredytu');
+$smarty->assign('page_header', 'Kalkulator kredytowy');
+
+$smarty->assign('calcForm', $calcForm);
+$smarty->assign('result', $result);
+$smarty->assign('message', $message);
+
+$smarty->display(_ROOT_PATH . '/app/calc.html');

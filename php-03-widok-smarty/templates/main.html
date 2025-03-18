@@ -29,15 +29,19 @@
     </section>
 
     <!-- Intro -->
-    <section id="intro" class="wrapper style1" style="padding: 3rem 1rem;">
-      <div class="title">{$page_header|default:"Tytuł domyślny"}</div>
+     
+    <section id="intro" class="wrapper style1">
+      <div class="title">Co to za strona?</div>
       <div class="container">
-        <p class="style1">{$page_description|default:"Opis domyślny"}</p>
+        <p class="style1">
+          {$page_description|default:"Opis domyślny"}
+        </p>
       </div>
     </section>
 
     <!-- Main -->
-    <section id="main" class="wrapper style2" style="padding: 0;">
+    <section id="main" class="wrapper style2">
+      <div class="title">{$page_title|default:"Tytuł domyślny"}</div>
       <div class="container">
         {block name=content} Domyślna treść zawartości .... {/block}
       </div>
@@ -59,7 +63,7 @@
   <!-- Scripts -->
   <script src="{$app_url}/assets/js/jquery.min.js"></script>
   <script src="{$app_url}/assets/js/browser.min.js"></script>
-  <script src="{$app_url/}assets/js/breakpoints.min.js"></script>
+  <script src="{$app_url}/assets/js/breakpoints.min.js"></script>
   <script src="{$app_url}/assets/js/util.js"></script>
   <script src="{$app_url}/assets/js/main.js"></script>
 
