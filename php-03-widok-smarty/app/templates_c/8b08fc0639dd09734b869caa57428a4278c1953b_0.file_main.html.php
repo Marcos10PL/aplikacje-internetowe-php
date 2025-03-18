@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-18 22:13:02
+/* Smarty version 5.4.3, created on 2025-03-18 22:41:26
   from 'file:C:\Users\marek\Pulpit\php1\aplikacje-internetowe-php\php-03-widok-smarty\app\../templates/main.html' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67d9efeee389c1_48041785',
+  'unifunc' => 'content_67d9f6966cd922_46954485',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8b08fc0639dd09734b869caa57428a4278c1953b' => 
     array (
       0 => 'C:\\Users\\marek\\Pulpit\\php1\\aplikacje-internetowe-php\\php-03-widok-smarty\\app\\../templates/main.html',
-      1 => 1742335953,
+      1 => 1742337284,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67d9efeee389c1_48041785 (\Smarty\Template $_smarty_tpl) {
+function content_67d9f6966cd922_46954485 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\Users\\marek\\Pulpit\\php1\\aplikacje-internetowe-php\\php-03-widok-smarty\\templates';
 $_smarty_tpl->getInheritance()->init($_smarty_tpl, false);
 ?>
@@ -57,20 +57,24 @@ $_smarty_tpl->getInheritance()->init($_smarty_tpl, false);
     </section>
 
     <!-- Intro -->
-    <section id="intro" class="wrapper style1" style="padding: 3rem 1rem;">
-      <div class="title"><?php echo (($tmp = $_smarty_tpl->getValue('page_header') ?? null)===null||$tmp==='' ? "Tytuł domyślny" ?? null : $tmp);?>
-</div>
+     
+    <section id="intro" class="wrapper style1">
+      <div class="title">Co to za strona?</div>
       <div class="container">
-        <p class="style1"><?php echo (($tmp = $_smarty_tpl->getValue('page_description') ?? null)===null||$tmp==='' ? "Opis domyślny" ?? null : $tmp);?>
-</p>
+        <p class="style1">
+          <?php echo (($tmp = $_smarty_tpl->getValue('page_description') ?? null)===null||$tmp==='' ? "Opis domyślny" ?? null : $tmp);?>
+
+        </p>
       </div>
     </section>
 
     <!-- Main -->
-    <section id="main" class="wrapper style2" style="padding: 0;">
+    <section id="main" class="wrapper style2">
+      <div class="title"><?php echo (($tmp = $_smarty_tpl->getValue('page_title') ?? null)===null||$tmp==='' ? "Tytuł domyślny" ?? null : $tmp);?>
+</div>
       <div class="container">
         <?php 
-$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_187174083467d9efeee36ef6_47720246', 'content');
+$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_43142541467d9f6966cbe15_93485034', 'content');
 ?>
 
       </div>
@@ -115,7 +119,7 @@ $_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_187174083467d
 
 </html><?php }
 /* {block 'content'} */
-class Block_187174083467d9efeee36ef6_47720246 extends \Smarty\Runtime\Block
+class Block_43142541467d9f6966cbe15_93485034 extends \Smarty\Runtime\Block
 {
 public function callBlock(\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\Users\\marek\\Pulpit\\php1\\aplikacje-internetowe-php\\php-03-widok-smarty\\templates';
