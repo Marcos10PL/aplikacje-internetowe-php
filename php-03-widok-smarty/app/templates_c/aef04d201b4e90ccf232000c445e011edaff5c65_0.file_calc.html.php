@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-18 22:41:26
+/* Smarty version 5.4.3, created on 2025-03-23 09:09:43
   from 'file:C:\Users\marek\Pulpit\php1\aplikacje-internetowe-php\php-03-widok-smarty/app/calc.html' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67d9f6966b60c9_08640755',
+  'unifunc' => 'content_67dfcfd7f2ab00_39034485',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aef04d201b4e90ccf232000c445e011edaff5c65' => 
     array (
       0 => 'C:\\Users\\marek\\Pulpit\\php1\\aplikacje-internetowe-php\\php-03-widok-smarty/app/calc.html',
-      1 => 1742336781,
+      1 => 1742720982,
       2 => 'file',
     ),
   ),
@@ -20,18 +20,18 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67d9f6966b60c9_08640755 (\Smarty\Template $_smarty_tpl) {
+function content_67dfcfd7f2ab00_39034485 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\Users\\marek\\Pulpit\\php1\\aplikacje-internetowe-php\\php-03-widok-smarty\\app';
 $_smarty_tpl->getInheritance()->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_102321411767d9f6966aa5a6_66485421', 'content');
+$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_125773110367dfcfd7f1b169_12451358', 'content');
 $_smarty_tpl->getInheritance()->endChild($_smarty_tpl, "../templates/main.html", $_smarty_current_dir);
 }
 /* {block 'content'} */
-class Block_102321411767d9f6966aa5a6_66485421 extends \Smarty\Runtime\Block
+class Block_125773110367dfcfd7f1b169_12451358 extends \Smarty\Runtime\Block
 {
 public function callBlock(\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\Users\\marek\\Pulpit\\php1\\aplikacje-internetowe-php\\php-03-widok-smarty\\app';
@@ -62,14 +62,14 @@ $_smarty_current_dir = 'C:\\Users\\marek\\Pulpit\\php1\\aplikacje-internetowe-ph
 
 <div style="text-align: center;">
   <?php if (!( !$_smarty_tpl->hasVariable('message') || empty($_smarty_tpl->getValue('message')))) {?>
-    <div style="color: firebrick; font-size: 1.4rem; text-transform: uppercase;">
+    <div style="color: firebrick; font-size: 1.2rem; text-transform: uppercase;">
       <?php echo $_smarty_tpl->getValue('message');?>
 
     </div>
   <?php }?>
 
   <?php if (!( !$_smarty_tpl->hasVariable('result') || empty($_smarty_tpl->getValue('result')))) {?>
-    <div style="color: forestgreen; font-size: 1.4rem; text-transform: uppercase;">
+    <div style="color: forestgreen; font-size: 1.2rem; text-transform: uppercase;">
       Miesięczna rata: <?php echo $_smarty_tpl->getValue('result');?>
 
     </div>
