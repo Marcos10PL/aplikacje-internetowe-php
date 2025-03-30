@@ -1,17 +1,20 @@
 <?php
 require_once $conf->root_path . '/lib/smarty/libs/Smarty.class.php';
 require_once $conf->root_path . '/app/calc-credit/CalcCreditForm.class.php';
+require_once $conf->root_path . '/app/calc-credit/CalcCreditResult.class.php';
 require_once $conf->root_path . '/lib/my/Messages.class.php';
 
 class CalcCreditCtrl
 {
   private $form;
   private $messages;
+  private $result;
 
   public function __construct()
   {
     $this->form = new CalcCreditForm();
     $this->messages = new Messages();
+    $this->result = new CalcCreditResult();
   }
 
   private function getParams()
@@ -50,7 +53,7 @@ class CalcCreditCtrl
     $this->getParams();
 
     if ($this->validate()) {
-      $this->form->result = round(($this->form->sum + ($this->form->sum * $this->form->interestRate / 100)) / ($this->form->years * 12), 2);
+      $this->result->result = round(($this->form->sum + ($this->form->sum * $this->form->interestRate / 100)) / ($this->form->years * 12), 2);
 
       $this->messages->addInfo('Obliczenia wykonano poprawnie');
     }
@@ -72,38 +75,8 @@ class CalcCreditCtrl
 
     $smarty->assign('form', $this->form);
     $smarty->assign('messages', $this->messages);
-    $smarty->assign('result', $this->form->result);
+    $smarty->assign('result', $this->result->result);
 
     $smarty->display($conf->root_path . '/app/calc-credit/calc-credit.html');
   }
 }
-
-
-
-// function process(&$calcForm)
-// {
-//   return round(($calcForm['sum'] + ($calcForm['sum'] * $calcForm['interest-rate'] / 100)) / ($calcForm['years'] * 12), 2);
-// }
-
-// $requiredFields = ['sum', 'years', 'interest-rate'];
-// $calcForm = array_fill_keys($requiredFields, '');
-
-// $message = null;
-// $result = null;
-
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//   getParams($calcForm, $requiredFields);
-//   if (validate($calcForm, $requiredFields, $message)) {
-//     $result = process($calcForm);
-//   }
-// }
-
-// $smarty = new Smarty\Smarty();
-
-
-
-// $smarty->assign('calcForm', $calcForm);
-// $smarty->assign('result', $result);
-// $smarty->assign('message', $message);
-
-// $smarty->display(_ROOT_PATH . '/app/calc.html');

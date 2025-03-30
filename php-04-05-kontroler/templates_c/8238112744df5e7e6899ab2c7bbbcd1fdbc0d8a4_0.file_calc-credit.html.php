@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-25 21:23:20
+/* Smarty version 5.4.3, created on 2025-03-30 12:08:23
   from 'file:C:\Users\marek\Pulpit\php1\aplikacje-internetowe-php\php-04-05-kontroler/app/calc-credit/calc-credit.html' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e31ec88164b5_75703247',
+  'unifunc' => 'content_67e9343770ccf8_30377896',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,18 +20,18 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e31ec88164b5_75703247 (\Smarty\Template $_smarty_tpl) {
+function content_67e9343770ccf8_30377896 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\Users\\marek\\Pulpit\\php1\\aplikacje-internetowe-php\\php-04-05-kontroler\\app\\calc-credit';
 $_smarty_tpl->getInheritance()->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_172538947967e31ec88038b4_61946312', 'content');
+$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_75570459267e934376c8ad8_57107080', 'content');
 $_smarty_tpl->getInheritance()->endChild($_smarty_tpl, ($_smarty_tpl->getValue('conf')->root_path).("/templates/main.html"), $_smarty_current_dir);
 }
 /* {block 'content'} */
-class Block_172538947967e31ec88038b4_61946312 extends \Smarty\Runtime\Block
+class Block_75570459267e934376c8ad8_57107080 extends \Smarty\Runtime\Block
 {
 public function callBlock(\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\Users\\marek\\Pulpit\\php1\\aplikacje-internetowe-php\\php-04-05-kontroler\\app\\calc-credit';

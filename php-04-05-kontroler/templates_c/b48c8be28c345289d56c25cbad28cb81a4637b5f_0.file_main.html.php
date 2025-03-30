@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-25 21:25:37
+/* Smarty version 5.4.3, created on 2025-03-30 12:08:23
   from 'file:C:\Users\marek\Pulpit\php1\aplikacje-internetowe-php\php-04-05-kontroler/templates/main.html' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e31f514ce8e9_07917358',
+  'unifunc' => 'content_67e93437725940_14056647',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b48c8be28c345289d56c25cbad28cb81a4637b5f' => 
     array (
       0 => 'C:\\Users\\marek\\Pulpit\\php1\\aplikacje-internetowe-php\\php-04-05-kontroler/templates/main.html',
-      1 => 1742937845,
+      1 => 1742937950,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e31f514ce8e9_07917358 (\Smarty\Template $_smarty_tpl) {
+function content_67e93437725940_14056647 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\Users\\marek\\Pulpit\\php1\\aplikacje-internetowe-php\\php-04-05-kontroler\\templates';
 $_smarty_tpl->getInheritance()->init($_smarty_tpl, false);
 ?>
@@ -57,7 +57,7 @@ $_smarty_tpl->getInheritance()->init($_smarty_tpl, false);
     </section>
 
     <!-- Intro -->
-     
+
     <section id="intro" class="wrapper style1">
       <div class="title">Co to za strona?</div>
       <div class="container">
@@ -74,7 +74,7 @@ $_smarty_tpl->getInheritance()->init($_smarty_tpl, false);
 </div>
       <div class="container">
         <?php 
-$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_17607899567e31f514c7b06_93763256', 'content');
+$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_161030212867e93437721aa0_95213890', 'content');
 ?>
 
       </div>
@@ -119,7 +119,7 @@ assets/js/breakpoints.min.js"><?php echo '</script'; ?>
 
 </html><?php }
 /* {block 'content'} */
-class Block_17607899567e31f514c7b06_93763256 extends \Smarty\Runtime\Block
+class Block_161030212867e93437721aa0_95213890 extends \Smarty\Runtime\Block
 {
 public function callBlock(\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\Users\\marek\\Pulpit\\php1\\aplikacje-internetowe-php\\php-04-05-kontroler\\templates';
